@@ -1,0 +1,13 @@
+A – Preguntas teóricas
+1. ¿Qué es un vector o arreglo unidimensional?
+Es una estructura de datos que permite almacenar varios valores del mismo tipo bajo un único nombre, organizados en posiciones consecutivas de memoria accesibles mediante un índice.
+2. ¿Cuál es la diferencia entre una variable simple y un vector?
+Una variable simple almacena un único valor, mientras que un vector almacena múltiples valores del mismo tipo. Por ejemplo, para guardar 8 edades necesitarías 8 variables simples, pero con un vector basta con una sola declaración.
+3. int edades[8]; — ¿cuál es la primera y la última posición?
+La primera posición es el índice 0 (edades[0]) y la última es el índice 7 (edades[7]). En C++ los arreglos siempre se indexan desde 0.
+4. ¿Qué hace numeros[3] = 25;?
+Asigna el valor 25 al elemento que está en la posición 3 del vector numeros (es decir, el cuarto elemento, ya que se cuenta desde 0).
+5. ¿Por qué conviene usar un ciclo for para recorrer un vector?
+Porque permite acceder a cada posición de forma automática y ordenada sin tener que escribir una instrucción por cada elemento. El índice del for actúa directamente como índice del vector, haciendo el código más corto, legible y fácil de escalar.
+6. ¿Qué ventaja tiene usar una constante para indicar el tamaño?
+Si el tamaño cambia, solo hay que modificarlo en un lugar (la constante) y todo el código que la usa se actualiza automáticamente. Evita errores de inconsistencia y hace el programa más fácil de mantener.

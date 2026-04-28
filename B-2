@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int LIMITE = 10;
+    int calif[LIMITE];
+
+    for (int i = 0; i < LIMITE; i++) {
+        calif[i] = 6;
+    }
+
+    cout << "Contenido del vector:\n";
+    for (int i = 0; i < LIMITE; i++) {
+        cout << calif[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}

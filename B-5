@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int MAX = 100;
+    int numeros[MAX];
+    int cantidad = 0;
+    int suma = 0;
+    int valor;
+
+    cout << "Ingrese números (0 para terminar):\n";
+
+    while (cantidad < MAX) {
+        cout << "Número: ";
+        cin >> valor;
+        if (valor == 0) break;
+        numeros[cantidad] = valor;
+        suma = suma + valor;
+        cantidad++;
+    }
+
+    if (cantidad > 0) {
+        cout << "\nCantidad de números ingresados: " << cantidad << endl;
+        cout << "Suma total: " << suma << endl;
+        cout << "Promedio: " << (double)suma / cantidad << endl;
+    } else {
+        cout << "No se ingresó ningún número." << endl;
+    }
+
+    return 0;
+}
